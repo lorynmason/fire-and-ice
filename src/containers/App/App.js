@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { fetchHouses } from '../../thunks/fetchHouses';
-import { connect } from 'react-redux'
-import CardContainer from '../CardContainer/CardContainer'
+import { connect } from 'react-redux';
+import CardContainer from '../CardContainer/CardContainer';
 
 class App extends Component {
   componentDidMount() {
@@ -19,9 +19,10 @@ class App extends Component {
           <h2>Welcome to Westeros</h2>
         </div>
         <div className='Display-info'>
+          <CardContainer />
         </div>
-        <CardContainer />
       </div>
+      
     );
   }
 }

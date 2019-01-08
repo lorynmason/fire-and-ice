@@ -1,7 +1,7 @@
 import './index.css';
 import React from 'react';
 import { render } from 'react-dom'
-import App from './components/App/App.js';
+import App from './containers/App/App.js';
 import { Provider } from 'react-redux'
 import rootReducer from '../src/reducers'
 import thunk from 'redux-thunk';
