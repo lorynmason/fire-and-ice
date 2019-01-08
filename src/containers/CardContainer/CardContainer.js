@@ -3,13 +3,13 @@ import { connect } from 'react-redux';
 import { Card } from '../../components/Card/Card'
 import { Loader } from '../../components/Loader/Loader';
 
-export const CardContainer = ({ house }) => {
+export const CardContainer = ({ house, isLoading }) => {
 
   const cards = house.map( item => {
     return <Card item={item}/>
   })
 
-  if(!house.length) {
+  if(isLoading) {
     return (
     <div className="Container">
       <Loader />
@@ -23,8 +23,9 @@ export const CardContainer = ({ house }) => {
   )
 }
 
-const mapStateToProps = state => ({
-  house: state.house
+export const mapStateToProps = state => ({
+  house: state.house,
+  isLoading: state.isLoading
 })
 
 export default connect(mapStateToProps)(CardContainer);

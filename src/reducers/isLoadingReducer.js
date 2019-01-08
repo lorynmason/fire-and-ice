@@ -6,3 +6,5 @@ export const isLoadingReducer = (state=false, action) => {
       return state
   }
 }
+
+export default isLoadingReducer

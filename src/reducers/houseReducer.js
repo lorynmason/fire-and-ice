@@ -6,3 +6,5 @@ export const houseReducer = (state=[], action) => {
       return state
   }
 }
+
+export default houseReducer

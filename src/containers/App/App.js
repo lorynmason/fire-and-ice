@@ -27,7 +27,7 @@ class App extends Component {
   }
 }
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   fetchHouses: (url) => dispatch(fetchHouses(url))
 })
 

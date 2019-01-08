@@ -6,3 +6,5 @@ export const hasErrorReducer = (state='', action) => {
       return state
   }
 }
+
+export default hasErrorReducer
